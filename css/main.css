@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --pureWhite: #F2F2F2;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+  --mainBlue: #81BEF7;
+  --linkBlue: #81BEF7;
+  --mainBlack: #3d3d3d;
+  --mainRed: #E61010;
+  --mainOrange: #FE642E;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+/**** main styles ***/
+.right-padding{
+  padding-right: 0;
+}
+.no-padding{
+  padding: 0;
+}
+
+.max-viewport{
+  min-height: 86vh;
+}
+
+/*********** navbar ********/
+.navbar{
+  background: var(--mainBlack);
+  border: 1px solid var(--pureWhite);
+}
+
+.navbar .navbar-brand{
+  color: var(--pureWhite);
+}
+
+.navbar .nav-link,
+.navbar .icons{
+  color: var(--mainGrey);
+}
+
+.navbar .nav-link:hover,
+.navbar .icons:hover{
+  color: var(--mainBlue);
+}
+
+.navbar .icon{
+  position: relative;
+}
+
+.navbar .icon::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--mainRed);
+}
+
+/*********** sidebar ********/
+
+.sidebar{
+  background: var(--mainBlack);
+  border: 2px solid var(--pureWhite);
+}
+
+.sidebar .nav-link,
+.sidebar .navbar-brand{
+  color: var(--pureWhite);
+}
+
+.sidebar .nav-link:hover,
+.sidebar .navbar-brand:hover{
+  color: var(--mainBlue);
+}
+
+
+/*********** card-section ***********/
+.inform-card .card-1{
+  background: var(--mainBlack);
+}
+.inform-card .card-2{
+  background: var(--mainPink);
+}
+.inform-card .card-3{
+  background: var(--mainBlue);
+}
+.inform-card .card-4{
+  background: var(--mainRed);
+}
+
+.inform-card .card .body-icon{
+  font-size: 60px;
+  color: var(--mainWhite);
+}
+
+.inform-card .card .fa,
+.inform-card .card a{
+  color: var(--mainWhite);
+}
+.inform-card .card .fa:hover{
+  color: var(--mainOrange);
+}
+.inform-card .card{
+  color: var(--mainWhite);
+}
+
+.inform-card .card-footer{
+  background: rgba(0,0,0,0.5);
+}
